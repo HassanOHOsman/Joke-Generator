@@ -65,4 +65,12 @@ async function jokeGenerator() {
 
 jokeBtn.addEventListener("click", jokeGenerator);
 
+jokeBtn.addEventListener("mouseenter", () => {
+    jokeBtn.style.boxShadow = "0 0 15px #ff6347, 0 0 25px #ff6347";
+});
+
+jokeBtn.addEventListener("mouseleave", () => {
+  jokeBtn.style.boxShadow = "";
+});
+
 
