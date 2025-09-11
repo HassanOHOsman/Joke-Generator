@@ -2,13 +2,38 @@ const jokeBtn = document.createElement("button");
 jokeBtn.textContent = "Generate a Joke";
 document.body.append(jokeBtn);
 
+jokeBtn.style.width = "130px";
+jokeBtn.style.height = "60px";
+jokeBtn.style.borderRadius = "10px"
+jokeBtn.style.borderStyle = "solid";
+jokeBtn.style.borderColor = "#9d0208";
+jokeBtn.style.display = "block";
+jokeBtn.style.margin = "50px auto";
+jokeBtn.style.backgroundColor = "#e36414";
+jokeBtn.style.fontWeight = "bold";
+jokeBtn.style.fontFamily = "Copperplate, fantasy";
+jokeBtn.style.fontSize = "large";
+
+
+document.body.style.backgroundColor = "#e9d8a6";
+
+
 const joke = document.createElement("p");
 joke.textContent = "";
 document.body.append(joke);
 
+joke.style.textAlign = "center";
+joke.style.fontFamily = "Copperplate, fantasy";
+joke.style.fontSize = "x-large";
+
+
 const delivery = document.createElement("p");
 delivery.textContent = "";
 joke.after(delivery);
+
+delivery.style.textAlign = "center";
+delivery.style.fontFamily = "Copperplate, fantasy";
+delivery.style.fontSize = "x-large";
 
 async function jokeGenerator() {
     try {
