@@ -25,6 +25,7 @@ document.body.append(joke);
 joke.style.textAlign = "center";
 joke.style.fontFamily = "Copperplate, fantasy";
 joke.style.fontSize = "x-large";
+joke.style.marginTop = "100px";
 
 
 const delivery = document.createElement("p");
